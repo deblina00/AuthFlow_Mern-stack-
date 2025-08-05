@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axiosInstance from "../api/axios";
 import { toast } from "react-toastify";
+import { FiEye, FiEyeOff } from "react-icons/fi";
 
 const ChangePassword = () => {
   const [form, setForm] = useState({
@@ -62,7 +63,7 @@ const ChangePassword = () => {
             className="absolute top-1/2 right-3 -translate-y-1/2 text-white/60"
             tabIndex={-1}
           >
-            {showCurrent ? "🙈" : "👁️"}
+            {showCurrent ? <FiEyeOff size={20} /> : <FiEye size={20} />}
           </button>
         </div>
 
@@ -82,7 +83,7 @@ const ChangePassword = () => {
             className="absolute top-1/2 right-3 -translate-y-1/2 text-white/60"
             tabIndex={-1}
           >
-            {showNew ? "🙈" : "👁️"}
+            {showNew ? <FiEyeOff size={20} /> : <FiEye size={20} />}
           </button>
         </div>
 

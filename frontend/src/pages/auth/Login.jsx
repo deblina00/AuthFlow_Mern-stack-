@@ -197,6 +197,7 @@ import { toast } from "react-toastify";
 import { useNavigate, Link } from "react-router-dom";
 import useAuthStore from "../../store/authStore";
 import loginImage from "../../assets/login.jpg";
+import { FiEye, FiEyeOff } from "react-icons/fi";
 
 const Login = () => {
   const [form, setForm] = useState({ email: "", password: "" });
@@ -301,7 +302,7 @@ const Login = () => {
                 className="absolute top-1/2 right-3 -translate-y-1/2 text-gray-300"
                 tabIndex={-1}
               >
-                {showPassword ? "🙈" : "👁️"}
+                {showPassword ? <FiEyeOff size={20} /> : <FiEye size={20} />}
               </button>
             </div>
 

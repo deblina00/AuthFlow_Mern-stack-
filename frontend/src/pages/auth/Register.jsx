@@ -3,6 +3,7 @@ import axiosInstance from "../../api/axios";
 import { toast } from "react-toastify";
 import { useNavigate, Link } from "react-router-dom";
 import registerImage from "../../assets/login.jpg";
+import { FiEye, FiEyeOff } from "react-icons/fi";
 
 const Register = () => {
   const [form, setForm] = useState({
@@ -122,7 +123,7 @@ const Register = () => {
                 className="absolute top-1/2 right-3 -translate-y-1/2 text-gray-300"
                 tabIndex={-1}
               >
-                {showPassword ? "🙈" : "👁️"}
+                {showPassword ? <FiEyeOff size={20} /> : <FiEye size={20} />}
               </button>
             </div>
 
