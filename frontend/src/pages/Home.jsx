@@ -88,9 +88,10 @@ const Home = () => {
               </span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-10 leading-relaxed animate-fade-in-up delay-200">
-              Discover amazing features and connect with people around the
-              world. Your journey starts here with our innovative platform
-              designed to make your life easier.
+              From sign-up to profile management, enjoy a smooth and secure
+              journey — with email OTP verification, password resets, image
+              uploads, and more. It’s fast, reliable, and designed to feel
+              effortless.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up delay-400">
               <button
