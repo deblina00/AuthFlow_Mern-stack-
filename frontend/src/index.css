@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input {
+  @apply w-full p-2 border border-gray-300 rounded;
+}
+.btn {
+  @apply w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded;
+}
+
+body {
+  @apply bg-gradient-to-br from-[#1E1A38] via-[#2D1C4C] to-[#1E1A38];
+}
+
+@layer utilities {
+  .bg-grid-pattern {
+    background-image: linear-gradient(
+        rgba(59, 130, 246, 0.1) 1px,
+        transparent 1px
+      ),
+      linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+
+  .delay-200 {
+    animation-delay: 0.2s;
+  }
+
+  .delay-400 {
+    animation-delay: 0.4s;
+  }
+
+  .delay-1000 {
+    animation-delay: 1s;
+  }
+
+  .delay-2000 {
+    animation-delay: 2s;
+  }
+}
+
+
+/* === Enhanced Toastify Styles for Elegant Dark Theme === */
+.Toastify__toast {
+  background: linear-gradient(135deg, rgba(30,27,75,0.95), rgba(15,15,40,0.9));
+  color: #fefefe;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 6px 18px rgba(218, 155, 43, 0.2),
+              0 2px 6px rgba(0, 0, 0, 0.6);
+  font-size: 0.95rem;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.Toastify__toast-icon {
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.3));
+}
+
+/* Toast Types */
+.Toastify__toast--success {
+  border-left: 6px solid #DA9B2B;
+}
+
+.Toastify__toast--error {
+  border-left: 6px solid #EF4444;
+}
+
+.Toastify__toast--info {
+  border-left: 6px solid #3B82F6;
+}
+
+.Toastify__toast--warning {
+  border-left: 6px solid #FBBF24;
+}
+
+/* Close Button */
+.Toastify__close-button {
+  color: #ffffff;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.Toastify__close-button:hover {
+  opacity: 1;
+}
+
+/* Progress Bar */
+.Toastify__progress-bar {
+  background: linear-gradient(90deg, #DA9B2B, #facc15); /* gold to amber */
+  height: 4px;
+  border-radius: 0 0 10px 10px;
+}
