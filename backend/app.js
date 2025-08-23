@@ -10,21 +10,6 @@ dotenv.config();
 connectDB();
 
 const app = express();
-
-<<<<<<< HEAD
-=======
-// app.use(
-//   cors({
-//     origin: "http://localhost:5173",
-//   })
-// );
-
-const allowedOrigins = [
-  "http://localhost:5173",
-  "https://authflow-frontend-side.onrender.com",
-];
-
->>>>>>> 72c4029ed7773a9ed5ff8ebff27fbd8a953e73f8
 app.use(
   cors({
     origin: "http://localhost:5173",
